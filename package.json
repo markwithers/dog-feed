@@ -1,0 +1,15 @@
+{
+  "name": "React-ampersand-test",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "watchify -t [ reactify --es6 ] src/main.js -o build/build.js -v"
+  },
+  "author": "Mark Withers",
+  "license": "ISC",
+  "dependencies": {
+    "ampersand-model": "~4.0.1",
+    "react": "~0.11.1",
+    "reactify": "~0.14.0"
+  }
+}
