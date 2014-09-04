@@ -14,6 +14,9 @@ var Dog = AmpersandModel.extend({
         this.trigger('talk', 'You hear a hungry woofing. Woof woof!')
       }
     }
+
+    var self = this
+    setInterval(function() { self.eat() }, 4000)
   }
 })
 

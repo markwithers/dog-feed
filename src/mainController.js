@@ -9,8 +9,6 @@ var Messages = require('./messages')
 
 class MainController {
   constructor(dog) {
-    setInterval(function() { dog.eat() }, 4000)
-    
     React.renderComponent(
       <Kennel dog={dog} />,
       document.getElementById('kennel')
