@@ -15,8 +15,7 @@ var Dog = AmpersandModel.extend({
       }
     }
 
-    var self = this
-    setInterval(function() { self.eat() }, 4000)
+    setInterval(this.eat.bind(this), 4000)
   }
 })
 

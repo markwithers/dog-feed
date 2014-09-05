@@ -8,13 +8,12 @@ var Messages = React.createClass({
     return { message: '' }
   },
   componentDidMount: function() {
-    var self = this
-
-    this.props.dog.on('talk', function(noise) {
-      self.setState({ message: noise })
-      self.forceUpdate()
-      setTimeout(self.clearMessage, 2000)
-    })
+    this.props.dog.on('talk', this.setMessage)
+  },
+  setMessage: function(message) {
+    this.setState({ message: message })
+    this.forceUpdate()
+    setTimeout(this.clearMessage, 2000)
   },
   clearMessage: function() {
     this.setState({ message: '' })
