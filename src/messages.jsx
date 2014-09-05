@@ -12,12 +12,10 @@ var Messages = React.createClass({
   },
   setMessage: function(message) {
     this.setState({ message: message })
-    this.forceUpdate()
     setTimeout(this.clearMessage, 2000)
   },
   clearMessage: function() {
     this.setState({ message: '' })
-    this.forceUpdate()
   },
   render: function() {
     return <span>{this.state.message}</span>
