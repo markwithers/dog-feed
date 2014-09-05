@@ -3,9 +3,9 @@
  */
 
 var React = require('react')
-var Kennel = require('./kennel')
-var TreatButton = require('./treatButton')
-var Messages = require('./messages')
+var Kennel = require('./kennel.jsx')
+var TreatButton = require('./treatButton.jsx')
+var Messages = require('./messages.jsx')
 
 class MainController {
   constructor(dog) {
