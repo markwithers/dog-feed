@@ -6,7 +6,8 @@ app.get('/', function(req, res){
 });
 
 app.use(express.static(__dirname + '/public'))
+app.set('port', (process.env.PORT || 5000))
 
-var server = app.listen(3000, function() {
+var server = app.listen(app.get('port'), function() {
     console.log('Listening on port %d', server.address().port);
 });
