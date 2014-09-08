@@ -1,7 +1,7 @@
 /** 
  * @jsx React.DOM 
  */
-var equal = require('assert')
+var assert = require('assert')
 var React = require('react/addons')
 
 jest.dontMock('../src/dog')
@@ -17,6 +17,6 @@ describe('Kennel', function() {
     var kennel = TestUtils.renderIntoDocument(<Kennel dog={dog}/>)
     var oldText = kennel.getDOMNode().textContent
     dog.treats++
-    equal(false, kennel.getDOMNode().textContent == oldText)
+    assert.notEqual(oldText, kennel.getDOMNode().textContent)
   })
 })

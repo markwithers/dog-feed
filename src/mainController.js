@@ -3,25 +3,13 @@
  */
 
 var React = require('react')
-var Kennel = require('./kennel.jsx')
-var TreatButton = require('./treatButton.jsx')
-var Messages = require('./messages.jsx')
+var KennelList = require('./kennelList.jsx')
 
 class MainController {
-  constructor(dog) {
+  constructor(dogs) {
     React.renderComponent(
-      <Kennel dog={dog} />,
-      document.getElementById('kennel')
-    )
-
-    React.renderComponent(
-      <TreatButton dog={dog} />,
-      document.getElementById('button')
-    )
-
-    React.renderComponent(
-      <Messages dog={dog} />,
-      document.getElementById('messages')
+      <KennelList dogs={dogs} />,
+      document.getElementById('container')
     )
   }
 }
