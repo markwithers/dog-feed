@@ -2,6 +2,7 @@
  * @jsx React.DOM
  */
 var React = require('react')
+
 var Kennel = require('./kennel.jsx')
 var Adder = require('./adder.jsx')
 

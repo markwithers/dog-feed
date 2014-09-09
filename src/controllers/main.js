@@ -3,7 +3,7 @@
  */
 
 var React = require('react')
-var KennelList = require('./kennelList.jsx')
+var KennelList = require('../components/kennelList.jsx')
 
 class MainController {
   constructor(dogs) {

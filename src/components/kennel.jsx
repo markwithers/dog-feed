@@ -18,7 +18,6 @@ var Kennel = React.createClass({
       <label>{this.props.label}</label>
       <div>There are {this.props.dog.treats} treats in the kennel</div>
       <TreatButton dog={this.props.dog} />
-      <br />
       <Messages dog={this.props.dog} />
     </div>
   }

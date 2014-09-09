@@ -1,9 +1,9 @@
-var Dog = require('./dog')
-var Dogs = require('./dogCollection')
-var MainController = require('./mainController')
+var Dog = require('./models/dog')
+var Dogs = require('./collections/dogs')
+var MainController = require('./controllers/main')
 
 var dogs = new Dogs([
-  { treats: 1 },
-  { treats: 30 }
+  { treats: 6 },
+  { treats: 7 }
 ])
 var main = new MainController(dogs)

@@ -1,5 +1,5 @@
 {
-  "name": "React-ampersand-test",
+  "name": "dog-feed",
   "version": "0.0.1",
   "description": "",
   "main": "main.js",
@@ -8,7 +8,8 @@
     "start": "node main.js",
     "test": "mocha",
     "jest": "jest",
-    "postinstall": "browserify -t [ reactify --es6 ] src/main.js -o public/build/build.js"
+    "postinstall": "browserify -t [ reactify --es6 ] src/main.js -o public/build/build.js",
+    "build": "watchify -t [ reactify --es6 ] src/main.js -o public/build/build.js -v"
   },
   "author": "Mark Withers",
   "license": "ISC",

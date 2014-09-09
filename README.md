@@ -2,13 +2,7 @@ I'm messing around with React and Ampersand
 
 Prereqs
 =======
-npm install -g watchify
-
-npm install -g browserify
-
-npm install -g react
-
-npm install -g http-server
+npm install -g watchify // Doesn't install locally on Heroku
 
 Getting started
 ===============
@@ -16,6 +10,6 @@ Getting started
 
 2) npm install
 
-3) http-server
+3) npm start 
 
-4) npm start 
+4) npm run build // Starts the watchify process
