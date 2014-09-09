@@ -4,11 +4,11 @@
 var assert = require('assert')
 var React = require('react/addons')
 
-jest.dontMock('../src/dog')
-jest.dontMock('../src/messages.jsx')
+jest.dontMock('../src/models/dog')
+jest.dontMock('../src/components/messages.jsx')
 
-var Dog = require('../src/dog')
-var Messages = require('../src/messages.jsx');
+var Dog = require('../src/models/dog')
+var Messages = require('../src/components/messages.jsx');
 var TestUtils = React.addons.TestUtils;
 
 describe('messages', function() {
@@ -18,6 +18,6 @@ describe('messages', function() {
 
     var oldText = messages.getDOMNode().textContent
     dog.trigger('say', 'no listening')
-    assert.notEqual(oldText, messages.getDOMNode().textContent) 
+    assert.equal(oldText, messages.getDOMNode().textContent) 
   })
 })

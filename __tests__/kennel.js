@@ -4,11 +4,11 @@
 var assert = require('assert')
 var React = require('react/addons')
 
-jest.dontMock('../src/dog')
-jest.dontMock('../src/kennel.jsx')
+jest.dontMock('../src/models/dog')
+jest.dontMock('../src/components/kennel.jsx')
 
-var Dog = require('../src/dog')
-var Kennel = require('../src/kennel.jsx');
+var Dog = require('../src/models/dog')
+var Kennel = require('../src/components/kennel.jsx');
 var TestUtils = React.addons.TestUtils;
 
 describe('Kennel', function() {
