@@ -7,7 +7,7 @@ var Dog = AmpersandModel.extend({
   initialize: function() {
     this.eat = function() {
       if (this.treats > 0) {
-        this.treats--
+        this.treats = this.treats - 2
         this.trigger('talk', 'Chomp chomp!')
       }
       else {

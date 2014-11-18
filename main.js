@@ -5,6 +5,10 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/public/index.html');
 });
 
+app.get('/open/:day', function(req, res) {
+  res.sendFile(__dirname + '/days/' + req.params.day + '.json');
+});
+
 app.use(express.static(__dirname + '/public'))
 app.set('port', (process.env.PORT || 5000))
 
